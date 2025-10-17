@@ -1,18 +1,12 @@
-import React from "react";
 'use client';
-import { Container, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 export default function CenterText() {
   return (
-    <Container fluid className="text-center center-text">
-      <Row className="justify-content-center align-content-center mt-5 pt-5">
-        <Col md={8}>
-          <h1>GLOBALLY INSPIRED</h1>
-          <h1>LOCALLY SOURCED</h1>
-          <h3>A global fusion menu meets culinary creativity at Banyans Craft Kitchen + Lounge in Kailua.</h3>
-          <h5>Live Music Fridays & Saturdays</h5>
-        </Col>
-      </Row>
+    <Container className="text-center my-5">
+      <h1 className="display-4 fw-bold">Banyans Craft Kitchen + Lounge</h1>
+      <p className="lead">Where global fusion meets local flavor in the heart of Kailua.</p>
     </Container>
   );
 }
