@@ -1,13 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-import { Container } from 'react-bootstrap';
+import TopMenu from '../components/TopMenu';
+import CenterText from '../components/CenterText';
+import BottomFooter from '../components/BottomFooter';
 
 export default function Home() {
   return (
-    <main>
-      <Container>
-        <h1 className="text-center">Banyans</h1>
-      </Container>
+    <main className="d-flex flex-column min-vh-100">
+      <TopMenu />
+      <CenterText />
+      <BottomFooter />
     </main>
   );
 }
